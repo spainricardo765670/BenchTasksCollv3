@@ -111,4 +111,6 @@ Otherwise it is `implementing` and is not included in this pool.
 - `yuxuan-dev`: the tip commit also dropped a second, unnamed task's files directly at `tasks/yuxuan/` (`docs/`, `evaluation/`, `groundtruth_workspace/`). That is not a valid task directory, so only `sync-service` was tracked; it is `implementing`.
 - No `task_config.json` exists in any task on any developer branch, nor in the example template itself; the structural file/folder check above is therefore the applied criterion.
 
-This branch lives on the fork `spainricardo765670/BenchTasksCollv3` because the upstream repository is read-only for the working account, and is submitted to upstream via pull request.
+## Delivery note
+
+`toolathlon/BenchTasksCollv3` is read-only for the working account, so the `finalpool` branch was created on the writable mirror `spainricardo765670/BenchTasksCollv3`, which shares the same `main` history. All 332 task files were verified byte-for-byte against their developer-branch sources. A maintainer with write access can cherry-pick or merge this branch into upstream.
